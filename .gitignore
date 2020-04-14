@@ -6,6 +6,7 @@ __pycache__/
 *.txt
 *.csv
 *.mp3
+.DS_Store
 
 # C extensions
 *.so
