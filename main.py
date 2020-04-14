@@ -66,16 +66,17 @@ if __name__ == '__main__':
 	outfile = sys.argv[3]
 	AUDIO_OUT_PATH = sys.argv[4] # folder to store audios
 	AUDIO_OUT_PREFIX = sys.argv[5] # file name prefix
+	SRC = sys.argv[6]
+	DEST = sys.argv[7]
 	
 	s, t = extract_sentences(transcript)
-	print(len(s))
-	x=1/0
+	
 	delta_end = 0.75
 	dados = []
 	ID = 0
 
-	SRC = 'fr'
-	DEST = 'pt'
+	#SRC = 'fr'
+	#DEST = 'pt'
 	gtranslate = Translator()
 	
 	for i in range(len(s) - 1):
